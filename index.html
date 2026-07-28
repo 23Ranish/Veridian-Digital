@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Veridian Digital | Premium Web Design & Development</title>
+    <meta name="description" content="Veridian Digital is a boutique digital agency building modern websites for businesses wanting to stand out online. Based in Ontario, Canada." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Veridian Digital" />
+    <meta property="og:description" content="We design modern websites that help businesses build trust, attract customers, and grow online." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1DB954" />
+    
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+  </head> 
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">Veridian<span>.</span></div>
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container header-container">
+        <a href="#" class="logo">Veridian<span class="dot">.</span></a>
+        
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <!-- Moon -->
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+            <!-- Sun -->
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </button>
+          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">Book a Consultation</a>
+      <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle Dark Mode" style="margin-top: 2rem;">
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+      </button>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        
+        <div class="container hero-container">
+          <div class="hero-content reveal">
+            <h1>Helping Businesses Grow Through Premium <span class="typing-container"><span id="typewriter">Digital Experiences</span><span class="cursor">|</span></span></h1>
+            <p>We design modern websites that help businesses build trust, attract customers, and grow online.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Get Started</a>
+              <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual reveal stagger-2">
+            <div class="mockup-frame parallax" data-speed="3">
+              <div class="mockup-header">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-url">veridiandigital.ca</div>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-sim-nav"></div>
+                <div class="mockup-sim-hero">
+                  <div class="mockup-sim-title"></div>
+                  <div class="mockup-sim-subtitle"></div>
+                  <div class="mockup-sim-btn"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Bar 
+      <section class="trust-bar">
+        <h6 class="trust-title">Trusted by growing businesses</h6>
+        <div class="trust-scroll">
+          <div class="trust-track">
+            <div class="trust-logo">Maple & Co.</div>
+            <div class="trust-logo">Peak Performance</div>
+            <div class="trust-logo">Hartley Legal</div>
+            <div class="trust-logo">Black Diamond</div>
+            <div class="trust-logo">Nexus Tech</div>
+            <div class="trust-logo">Elevate Studio</div>
+          </div>
+        </div>
+      </section>-->
+
+      <!-- Services -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Our Services</h2>
+            <p>Everything you need to build a powerful online presence.</p>
+          </div>
+          
+          <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card reveal stagger-1">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>Website Design</h3>
+              <p>Custom, conversion-focused designs that reflect your brand identity and captivate your target audience.</p>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card reveal stagger-2">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Responsive Web Development</h3>
+              <p>Fast, clean, modern code. We build websites that look and perform flawlessly on any device.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card reveal stagger-1">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              </div>
+              <h3>SEO Optimization</h3>
+              <p>Rank higher in search results and attract more organic, high-quality traffic to your business.</p>
+            </div>            
+
+            <!-- Service 4 
+            <div class="service-card reveal stagger-3">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-9 5 18 2-9h5"></path></svg>
+              </div>
+              <h3>Website Redesign</h3>
+              <p>Transform outdated, underperforming sites into modern assets that drive real business growth.</p>
+            </div> -->
+            
+            <!-- Service 5 
+            <div class="service-card reveal stagger-2">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <h3>Performance Optimization</h3>
+              <p>Speed is your competitive edge. We optimize every asset to ensure lightning-fast load times.</p>
+            </div> -->
+            
+            <!-- Service 6 
+            <div class="service-card reveal stagger-3">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Website Maintenance</h3>
+              <p>Keep your site running flawlessly with ongoing updates, security patches, and backups.</p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section id="why" class="why-section">
+        <div class="container why-container">
+          <div class="why-text reveal">
+            <h2>Why Choose <span class="text-accent">Veridian.</span></h2>
+            <p>We don't just build websites; we build digital experiences engineered for growth, speed, and reliability.</p>
+            <a href="#contact" class="btn btn-primary">Start Your Project</a>
+          </div>
+          
+          <div class="why-grid reveal stagger-2">
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>Premium Design</h4>
+                <p>Bespoke aesthetics that elevate your brand.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>Fast Loading</h4>
+                <p>Optimized architecture for instant response.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>Mobile Optimized</h4>
+                <p>Perfect rendering across all screen sizes.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>SEO Ready</h4>
+                <p>Built with best practices for search engines.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>Secure</h4>
+                <p>Robust security protocols to protect data.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <svg class="why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div>
+                <h4>Built to Convert</h4>
+                <p>Strategic layouts that drive customer action.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Selected Work</h2>
+            <p>A showcase of our latest digital transformations.</p>
+          </div>
+          
+          <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="portfolio-card reveal">
+              <div class="portfolio-visual">
+                <div class="portfolio-mockup">
+                <div class="portfolio-badge">Live Website</div>
+                  <div class="portfolio-mockup-header">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="portfolio-browser">
+                    <a href="https://www.blackdiamondmotors.ca/"
+                      target="_blank"
+                      rel="noopener noreferrer">
+
+                      <img
+                        src="img/BDMMOCKS.png"
+                        alt="Black Diamond Motors homepage"
+                        class="portfolio-site">
+                    </a>
+                  </div>
+
+                  <!-- <div style="padding: 20px;">
+                    <div style="width: 40%; height: 20px; background: #fff; margin-bottom: 30px; opacity: 0.8; border-radius: 4px;"></div>
+                    <div style="width: 80%; height: 40px; background: #333; margin-bottom: 10px; border-radius: 4px;"></div>
+                    <div style="width: 60%; height: 40px; background: #333; margin-bottom: 20px; border-radius: 4px;"></div>
+                    <div style="width: 120px; height: 36px; background: #fff; border-radius: 20px; opacity: 0.9;"></div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Automotive</span>
+                  <span class="portfolio-tag">Web Design</span>
+                  <span class="portfolio-tag">Development</span>
+                  <span class="portfolio-tag">SEO</span>
+                </div>
+                <h3>Black Diamond Motors</h3>
+                <p>Luxury vehicle rental website featuring modern design, responsive layout, dynamic vehicle showcase, and premium user experience.</p>
+                <div class="portfolio-actions">
+                  <a href="https://www.blackdiamondmotors.ca/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Live Site →</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project 2
+            <div class="portfolio-card reveal">
+              <div class="portfolio-visual" style="background: #1a1a2e;">
+                <div class="portfolio-mockup" style="background: #16213e; border-color: #0f3460;">
+                  <div class="portfolio-mockup-header" style="background: #0f3460; border-color: #0f3460;">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div style="padding: 20px; display: flex; gap: 10px;">
+                    <div style="flex: 1; height: 120px; background: #e94560; border-radius: 8px;"></div>
+                    <div style="flex: 1; height: 120px; background: #0f3460; border-radius: 8px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Fitness</span>
+                  <span class="portfolio-tag">Branding</span>
+                  <span class="portfolio-tag">Web Design</span>
+                </div>
+                <h3>Elevate Fitness Studio</h3>
+                <p>Brand identity + website for a premium fitness studio. Clean, bold, energetic layout with integrated class scheduling.</p>
+                <div class="portfolio-actions">
+                  <a href="#" class="btn btn-outline">View Case Study</a>
+                </div>
+              </div>
+            </div> -->
+            
+            <!-- Project 3 
+            <div class="portfolio-card reveal">
+              <div class="portfolio-visual" style="background: #f4f4f4;">
+                <div class="portfolio-mockup" style="background: #ffffff; border-color: #e0e0e0;">
+                  <div class="portfolio-mockup-header" style="background: #f9f9f9; border-color: #e0e0e0;">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div style="padding: 20px; text-align: center;">
+                    <div style="width: 30px; height: 30px; background: #222; margin: 0 auto 20px auto; border-radius: 4px;"></div>
+                    <div style="width: 50%; height: 20px; background: #333; margin: 0 auto 10px auto; border-radius: 4px;"></div>
+                    <div style="width: 40%; height: 10px; background: #999; margin: 0 auto; border-radius: 4px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-tags">
+                  <span class="portfolio-tag">Legal</span>
+                  <span class="portfolio-tag">Corporate</span>
+                  <span class="portfolio-tag">Development</span>
+                </div>
+                <h3>Hartley Legal Group</h3>
+                <p>Professional law firm website. Authoritative, minimal, trust-building design engineered for client acquisition.</p>
+                <div class="portfolio-actions">
+                  <a href="#" class="btn btn-outline">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Process Section -->
+      <section id="process" class="process-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Our Process</h2>
+            <p>A proven methodology to bring your vision to life.</p>
+          </div>
+          
+          <div class="process-timeline reveal stagger-2">
+            <div class="process-step">
+              <div class="process-circle">1</div>
+              <div class="process-content">
+                <h4>Discovery</h4>
+                <p>Understanding your goals, audience, and vision.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-circle">2</div>
+              <div class="process-content">
+                <h4>Strategy</h4>
+                <p>Crafting a comprehensive roadmap for success.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-circle">3</div>
+              <div class="process-content">
+                <h4>Design</h4>
+                <p>Creating stunning, purposeful visual assets.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-circle">4</div>
+              <div class="process-content">
+                <h4>Development</h4>
+                <p>Building with clean, scalable, modern code.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-circle">5</div>
+              <div class="process-content">
+                <h4>Launch</h4>
+                <p>Delivering a site ready to perform and convert.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats 
+      <section class="stats-section">
+        <div class="container stats-grid reveal">
+          <div class="stat-item">
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Responsive</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="99" data-suffix="%">0</div>
+            <div class="stat-label">Performance Goal</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- About -->
+      <section id="about">
+        <div class="container about-container">
+          <div class="about-text reveal">
+            <h2>Driven by Craft.<br>Defined by Results.</h2>
+            <p>Veridian Digital was founded with a simple belief: every business deserves a website that works as hard as they do.</p>
+            <p>We're a focused team of designers and developers based in Ontario, Canada, dedicated to building modern, high-performance websites for businesses that want to stand out online. We don't believe in cookie-cutter templates or one-size-fits-all solutions.</p>
+            <p>Every project is thoughtfully crafted — from strategy to launch — with your goals at the centre.</p>
+          </div>
+          
+          <div class="about-visual reveal stagger-2">
+            <!-- <div class="about-card parallax" data-speed="1.5"></div> -->
+              <div class="about-logo">Veridian<span>.</span></div>
+              <p style="color: var(--text-secondary);">Premium Digital Agency</p>
+              
+              <div class="about-details">
+                <div class="about-detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Ontario, Canada</span>
+                </div>
+                <div class="about-detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Mon-Fri, 9am - 5pm EST</span>
+                </div>
+                <div class="about-detail">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <span>hello@veridiandigital.ca</span>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials 
+      <section class="testimonials-section">
+        <div class="container reveal">
+          <div class="testimonials-slider">
+            <div class="testimonial-slide active">
+              <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+              <p class="testimonial-text">"Working with Veridian Digital transformed our online presence completely. Our new website has significantly increased our enquiries and we've had so many compliments from customers."</p>
+              <div class="testimonial-author">Sarah M.</div>
+              <div class="testimonial-role">Founder, Maple & Co. Boutique</div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+              <p class="testimonial-text">"From our first conversation to launch day, the experience was seamless. The website they built for us is fast, beautiful, and has already helped us bring in new members."</p>
+              <div class="testimonial-author">James R.</div>
+              <div class="testimonial-role">Owner, Peak Performance Gym</div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+              <p class="testimonial-text">"We were hesitant to invest in a new website, but it was one of the best decisions we made. The team at Veridian Digital delivered beyond expectations."</p>
+              <div class="testimonial-author">Natasha K.</div>
+              <div class="testimonial-role">Director, Hartley Legal Group</div>
+            </div>
+          </div>
+          
+          <div class="slider-dots">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="container faq-container reveal">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about working with us.</p>
+          </div>
+          
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                How long does a website typically take?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>On average, a standard business website takes 4-6 weeks from initial consultation to final launch. More complex projects with custom features may take 8-12 weeks. We establish a clear timeline during our strategy phase.</p>
+              </div>
+            </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                Do you manage my website after it's launched?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>We don't currently offer ongoing website management, but we do personally guide you through the launch process and show you how to update and manage your website yourself. You'll receive step-by-step support and won't be left figuring things out alone.</p>
+              </div>
+            </div>
+            
+           <!-- <div class="faq-item">
+              <div class="faq-question">
+                Do you redesign existing websites?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>Absolutely. We often work with businesses looking to modernize their outdated websites. A redesign is an excellent opportunity to improve user experience, boost performance, and align the site with your current brand identity.</p>
+              </div>
+            </div> -->
+            
+           <!-- <div class="faq-item">
+              <div class="faq-question">
+                Can you maintain my website after it's launched?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, we offer ongoing maintenance packages to ensure your website remains secure, fast, and up-to-date. This includes software updates, regular backups, security monitoring, and minor content updates.</p>
+              </div>
+            </div> -->
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                Will my website look great on mobile devices?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>100%. We employ a mobile-first design approach. Over half of all web traffic comes from mobile devices, so we ensure your site provides a flawless, responsive experience across smartphones, tablets, and desktops.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                What information do I need to get started?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>To begin, we'll need a basic understanding of your business goals, target audience, and any existing branding materials (logo, colors). Don't worry if you don't have everything figured out — our discovery process is designed to help define these elements.</p>
+              </div>
+            </div>
+            
+           <!-- <div class="faq-item">
+              <div class="faq-question">
+                Do you offer website hosting?
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, we provide premium, secure hosting solutions for our clients. Our hosting ensures optimal performance, daily backups, and robust security protocols, so you don't have to worry about the technical details.</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="why-section">
+        <div class="container contact-container reveal">
+          <div class="contact-info">
+            <h3>Let's build something great together.</h3>
+            <p>Ready to elevate your digital presence? Fill out the form, and we'll be in touch within 24 hours.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-method-details">
+                  <h4>Email Us</h4>
+                  <a href="mailto:hello@veridiandigital.ca">hello@veridiandigital.ca</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-method-details">
+                  <h4>Location</h4>
+                  <span>Ontario, Canada</span>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="contact-method-details">
+                  <h4>Follow Us</h4>
+                  <a href="https://www.linkedin.com/company/veridiandigital" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <!-- Replace YOUR_FORM_ID when moving to production -->
+            <form id="contact-form" action="https://formspree.io/f/dummy-form-id" method="POST">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="business">Business Name</label>
+                  <input type="text" id="business" name="business" class="form-control" placeholder="Acme Corp">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 123-4567">
+                </div>
+                <div class="form-group full">
+                  <label for="service">Service Interested In</label>
+                  <select id="service" name="service" class="form-control" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="web-design">Website Design</option>
+                    <option value="seo">SEO Optimization</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group full">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" class="form-control" required placeholder="Tell us about your project goals..."></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">Veridian<span class="dot">.</span></a>
+            <p>Building the web, one business at a time. Premium digital experiences for modern brands.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#contact">Contact Form</a></li>
+              <li><a href="mailto:ranishumasuthan@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/company/veridiandigital" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              
+            </ul>
+          </div>
+        </div> 
+        
+        <div class="footer-bottom">
+          <p>&copy; 2026 Veridian Digital. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/veridiandigital" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+
+          <!--  <a href="#" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>-->
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to Top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
