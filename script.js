@@ -107,41 +107,108 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // Typing Animation
-  const typewriterElement = document.getElementById('typewriter');
-  if (typewriterElement) {
-    const words = ['Digital Experiences.', 'Web Design.', 'Development.', 'SEO.', 'Digital Growth.'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    
-    function type() {
-      const currentWord = words[wordIndex];
-      
-      if (isDeleting) {
-        typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-      }
-      
-      let typeSpeed = isDeleting ? 30 : 80;
-      
-      if (!isDeleting && charIndex === currentWord.length) {
-        typeSpeed = 2000; // Pause at end of word
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        typeSpeed = 500; // Pause before new word
-      }
-      
-      setTimeout(type, typeSpeed);
+// Typing Animation
+const typewriterElement = document.getElementById('typewriter');
+
+if (typewriterElement) {
+
+  const words = [
+    'Digital Experiences.',
+    'Web Design.',
+    'Development.',
+    'SEO.',
+    'Digital Growth.'
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingPaused = false;
+  let typingTimer;
+
+  function type() {
+
+    if (typingPaused) return;
+
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+      typewriterElement.textContent =
+        currentWord.substring(0, charIndex - 1);
+      charIndex--;
+
+    } else {
+
+      typewriterElement.textContent =
+        currentWord.substring(0, charIndex + 1);
+      charIndex++;
     }
-    
-    setTimeout(type, 1000);
+
+
+    let typeSpeed = isDeleting ? 30 : 80;
+
+
+    if (!isDeleting && charIndex === currentWord.length) {
+
+      typeSpeed = 2000;
+      isDeleting = true;
+
+    } else if (isDeleting && charIndex === 0) {
+
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      typeSpeed = 500;
+
+    }
+
+
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(type, typeSpeed);
   }
+
+
+  function pauseTyping() {
+    typingPaused = true;
+    clearTimeout(typingTimer);
+  }
+
+
+  function resumeTyping() {
+    if (!typingPaused) return;
+
+    typingPaused = false;
+    typingTimer = setTimeout(type, 300);
+  }
+
+
+  const heroSection = document.querySelector('#hero');
+
+
+  const typingObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+      if(entry.isIntersecting){
+        resumeTyping();
+      } 
+      else {
+        pauseTyping();
+      }
+
+    });
+
+  }, {
+    threshold: 0.4
+  });
+
+
+  if (heroSection) {
+  typingObserver.observe(heroSection);
+  }
+
+  typingTimer = setTimeout(type, 1000);
+
+}
 
   // Mouse Parallax
   document.addEventListener('mousemove', (e) => {
