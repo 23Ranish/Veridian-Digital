@@ -70,12 +70,12 @@ html {
   scroll-behavior: auto; /* Handled via JS to account for header offset */
 }
 
+html,
 body {
   font-family: var(--font-body);
   color: var(--text-primary);
   background-color: var(--bg-color);
   line-height: 1.6;
-  overflow-x: hidden;
   transition: background-color var(--transition-base), color var(--transition-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -261,6 +261,24 @@ body.dark .cursor-glow {
   opacity: 0.3;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .cursor-glow {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
 /* Header */
 header {
   position: fixed;
@@ -413,10 +431,14 @@ body.dark .moon-icon { display: none; }
   overflow: hidden;
 }
 .hero-container {
-  display: grid;
+    display:grid;
+    width:100%;
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+}
+.portfolio-mockup{
+    max-width:100%;
 }
 @media (min-width: 1024px) {
   .hero-container { grid-template-columns: 1.1fr 0.9fr; }
@@ -870,8 +892,12 @@ body.dark .blob-2 {
     transition:transform 8s ease;
 }
 
+.portfolio-browser {
+    height: 400px;
+    overflow: hidden;
+}
 .portfolio-card:hover .portfolio-site {
-    transform: translateY(calc(-100% + 400px));
+    transform: translateY(calc(-100% + 100%));
 }
 
 .portfolio-badge{
@@ -1417,6 +1443,7 @@ body.dark footer { background: #080808; border-top: 1px solid #222; }
 
 .hero-visual,
 .mockup-frame {
+    width: 100%;
     max-width: 100%;
 }
 
