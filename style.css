@@ -1414,3 +1414,15 @@ body.dark footer { background: #080808; border-top: 1px solid #222; }
   }
 
 }
+
+.hero-visual,
+.mockup-frame {
+    max-width: 100%;
+}
+
+.mockup-url {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
