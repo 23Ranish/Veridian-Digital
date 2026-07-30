@@ -772,6 +772,13 @@ body.dark .blob-2 {
   gap: 3rem;
   margin-top: var(--spacing-lg);
 }
+
+.portfolio-grid {
+  max-width: 900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .portfolio-card {
   background: var(--surface-color);
   border-radius: var(--radius-lg);
@@ -807,8 +814,9 @@ body.dark .blob-2 {
   border-bottom: none;
   position: relative;
   z-index: 1;
-  transform: translateY(15%);
+  transform: translateY(0);
   transition: transform var(--transition-base);
+  margin: 0 auto;
 }
 .portfolio-card:hover .portfolio-mockup {
   transform: translateY(0);
@@ -862,10 +870,11 @@ body.dark .blob-2 {
     overflow: hidden;
 }
 
-.portfolio-site{
+.portfolio-site {
     width:100%;
     height:auto;
     display:block;
+    margin:0 auto;
     transform:translateY(0);
     transition:transform 8s ease;
 }
@@ -1413,4 +1422,10 @@ body.dark footer { background: #080808; border-top: 1px solid #222; }
     padding:.4rem .8rem;
   }
 
+}
+
+@media (max-width: 767px){
+  .cursor-glow {
+    display:none;
+  }
 }
