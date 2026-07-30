@@ -70,15 +70,12 @@ html {
   scroll-behavior: auto; /* Handled via JS to account for header offset */
 }
 
-html,
 body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
   font-family: var(--font-body);
   color: var(--text-primary);
   background-color: var(--bg-color);
   line-height: 1.6;
+  overflow-x: hidden;
   transition: background-color var(--transition-base), color var(--transition-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,7 +115,6 @@ img, svg {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   .container { padding: 0 var(--spacing-md); }
@@ -127,7 +123,6 @@ img, svg {
 section {
   padding: var(--spacing-xl) 0;
   position: relative;
-  overflow: hidden;
 }
 @media (min-width: 1024px) {
   section { padding: var(--spacing-xxl) 0; }
@@ -245,8 +240,6 @@ section {
 /* Cursor Glow */
 .cursor-glow {
   position: fixed;
-  left: 0;
-  top: 0;
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, var(--accent-green-light) 0%, transparent 60%);
@@ -266,24 +259,6 @@ section {
 body.dark .cursor-glow {
   mix-blend-mode: lighten;
   opacity: 0.3;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .cursor-glow {
-        display: none;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-    }
-
 }
 
 /* Header */
@@ -438,16 +413,10 @@ body.dark .moon-icon { display: none; }
   overflow: hidden;
 }
 .hero-container {
-    display:grid;
-    width:100%;
-    max-width:100%;
-    overflow:hidden;
-    grid-template-columns: 1fr;
-    gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
   align-items: center;
-}
-.portfolio-mockup{
-    max-width:100%;
 }
 @media (min-width: 1024px) {
   .hero-container { grid-template-columns: 1.1fr 0.9fr; }
@@ -497,8 +466,6 @@ body.dark .moon-icon { display: none; }
 /* Abstract Blobs */
 .blob {
   position: absolute;
-  max-width: 100vw;
-  overflow: hidden;
   border-radius: 50%;
   filter: blur(80px);
   z-index: -1;
@@ -536,7 +503,6 @@ body.dark .blob-2 {
 /* Mockup */
 .hero-visual { position: relative; perspective: 1000px; }
 .mockup-frame {
-  max-width: 100%;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -904,12 +870,8 @@ body.dark .blob-2 {
     transition:transform 8s ease;
 }
 
-.portfolio-browser {
-    height: 400px;
-    overflow: hidden;
-}
 .portfolio-card:hover .portfolio-site {
-    transform: translateY(calc(-100% + 100%));
+    transform: translateY(calc(-100% + 400px));
 }
 
 .portfolio-badge{
@@ -1451,31 +1413,4 @@ body.dark footer { background: #080808; border-top: 1px solid #222; }
     padding:.4rem .8rem;
   }
 
-}
-
-.hero-visual,
-.mockup-frame {
-    width: 100%;
-    max-width: 100%;
-}
-
-.mockup-url {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Final overflow fix */
-body,
-main,
-header,
-footer {
-  overflow-x: hidden;
-}
-
-img,
-video,
-iframe {
-  max-width: 100%;
 }
